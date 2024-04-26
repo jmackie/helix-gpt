@@ -32,10 +32,10 @@ const lsp = new Lsp.Service({
     executeCommandProvider: {
       commands: commands.map(i => i.key)
     },
-    completionProvider: {
-      resolveProvider: false,
-      triggerCharacters: config.triggerCharacters
-    },
+    // completionProvider: {
+    //   resolveProvider: false,
+    //   triggerCharacters: config.triggerCharacters
+    // },
     textDocumentSync: {
       change: 1,
       openClose: true
